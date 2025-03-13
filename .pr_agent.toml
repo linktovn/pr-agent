@@ -6,6 +6,15 @@ enable_auto_approval = true
 model = "gpt-4o-mini-2024-07-18"
 fallback_models=["gpt-4o-2024-11-20"]
 response_language="en-US"
+publish_output=true
+publish_output_progress=true
+verbosity_level=1
+ai_timeout=240
+
+[github_action_config]
+auto_review = true
+auto_describe = true
+auto_improve = true
 
 [pr_code_suggestions]
 max_context_tokens = 16000

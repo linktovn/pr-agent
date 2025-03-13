@@ -1,4 +1,4 @@
-FROM linktovn/pr-agent:github_action
+FROM linktovn/pr-agent:main
 
 # Thiết lập các biến môi trường để bỏ qua kiểm tra phiên bản Pro
 ENV PR_AGENT_PRO=true
