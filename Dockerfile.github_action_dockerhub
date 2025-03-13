@@ -1,1 +1,5 @@
-FROM codiumai/pr-agent:github_action
+FROM linktovn/pr-agent:github_action
+
+# Thiết lập các biến môi trường để bỏ qua kiểm tra phiên bản Pro
+ENV PR_AGENT_PRO=true
+ENV PR_AGENT_LICENSE=pro

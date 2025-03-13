@@ -1,3 +1,19 @@
 [pr_reviewer]
 enable_review_labels_effort = true
 enable_auto_approval = true
+
+[config]
+model = "gpt-4o-mini-2024-07-18"
+fallback_models=["gpt-4o-2024-11-20"]
+response_language="en-US"
+
+[pr_code_suggestions]
+max_context_tokens = 16000
+focus_only_on_problems = false
+suggestions_score_threshold = 0
+num_code_suggestions_per_chunk = 50
+max_number_of_calls = 20
+auto_extended_mode = true
+parallel_calls = true
+final_clip_factor = 0.3
+new_score_mechanism = false
